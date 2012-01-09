@@ -1,15 +1,16 @@
 ElHippo::Application.routes.draw do
-  get "pages/home"
+  
+  get "home" => 'pages#home'
 
-  get "pages/sign_in"
+  get "sign_in" => 'pages#sign_in'
 
-  get "pages/terms"
+  get "terms" => 'pages#terms'
 
-  get "pages/contact"
+  get "contact" => 'pages#contact'
 
-  get "pages/site_map"
+  get "site_map" => 'pages#site_map'
 
-  get "pages/about"
+  get "about" => 'pages#about'
 
   resources :posts
 

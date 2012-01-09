@@ -8,21 +8,25 @@
 </head>
 <body>
     <div class="container" style="box-shadow: 0 0px 10px #888888;">
-    <header>
+    <div id="header" style="text-align:center;">
         
         
-            <div class ="wrapper" style="background-image:url('sketchy.png');text-align:center">
-                <a href="pages/home">
-                    <h1>Elusive Hippo</h1>
-                </a>
-                <nav>
-                    <a href="www.google.com" class="sign-in-link">sign in</a>
-                </nav>
+            <div class ="wrapper" style="background-image:url('sketchy.png');">
+               
+                    <div id="logo-container" style="min-height:100px;">
+                         <a href="pages/home">
+                        <p style="font-size:30px;margin:10px 0 0 15px;float:left;color:black;font-family: Century Gothic, sans-serif;">Elusive Hippo<p> </a>
+                         <a href="www.google.com" class="sign-in-link" style="margin: 10px 15px 0 0;float:right;font-size:15px;color:black;font-family: Century Gothic, sans-serif;">sign in</a>
+                    </div>
+            
+                
+         
+                
             
             </div>
         
         
-    </header>
+    </div>
 
 <%= yield %>
 
@@ -30,12 +34,12 @@
       
             <div class="wrapper" style="background-image:url('http://www.dreamdesignerholidays.com/images/footer_background.gif');min-height:300px;text-align:center">
                
-                    <a href="pages/home" style="color:black">Home</a>
-                    <a href="pages/about">About</a>
-                    <a href="pages/sign_in">Sign In</a>
-                    <a href="pages/terms">Terms of Service</a>
-                    <a href="pages/contact">Contact</a>
-                    <a href="pages/site_map">Site Map</a>
+                    <a href="home" style="color:black">Home</a>
+                    <a href="about">About</a>
+                    <a href="sign_in">Sign In</a>
+                    <a href="terms">Terms of Service</a>
+                    <a href="contact">Contact</a>
+                    <a href="site_map">Site Map</a>
                     
             </div>
         
