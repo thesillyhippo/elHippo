@@ -6,9 +6,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: elHippo_development
-  username:
-  password:
+  database: elhippo
   pool: 5
   timeout: 5000
 
@@ -18,12 +16,16 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: elHippo_development
+  database: elhippo_test
   pool: 5
   timeout: 5000
+  username: ben
+  password: ten101
 
 production:
   adapter: postgresql
-  database: elHippo_development
+  database: elhippo_production
   pool: 5
   timeout: 5000
+  username: ben
+  password: ten101
