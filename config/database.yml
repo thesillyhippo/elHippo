@@ -6,7 +6,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: elhippo
+  database: elhippo_development
   pool: 5
   timeout: 5000
 

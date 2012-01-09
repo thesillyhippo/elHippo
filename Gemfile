@@ -29,13 +29,13 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
 
 group :development do
   gem 'rspec-rails', '2.6.1'
-  gem 'sqlite3'
+  #gem 'sqlite3'
 end
 
 group :test do
