@@ -7,4 +7,12 @@ class CreatePosts < ActiveRecord::Migration
       t.timestamps
     end
   end
+  
+  def self.up
+    rename_table :posts, :post
+  end
+  
+  def self.down
+    rename_table :posts, :post
+  end
 end
