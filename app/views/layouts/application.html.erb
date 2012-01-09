@@ -6,29 +6,31 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body style="background-image:url('http://www.desktopedia.com/bulkupload/Windows/part1/Clean%20Gray%20BackGround.jpg');">
+<body>
+    <div class="container" style="box-shadow: 0 0px 10px #888888;">
     <header>
-        <div class="container">
-            <div class ="wrapper" style="background-color:white;opacity: 0.7;">
+        
+        
+            <div class ="wrapper" style="background-image:url('sketchy.png');text-align:center">
                 <a href="pages/home">
-                    <h1 style="text-align:center">Elusive Hippo</h1>
+                    <h1>Elusive Hippo</h1>
                 </a>
                 <nav>
                     <a href="www.google.com" class="sign-in-link">sign in</a>
                 </nav>
             
             </div>
-        </div>
+        
         
     </header>
 
 <%= yield %>
 
     <div id="footer">
-        <div class="container">
-            <div class="wrapper" style="background-image:url('http://www.dreamdesignerholidays.com/images/footer_background.gif');min-height:100px">
+      
+            <div class="wrapper" style="background-image:url('http://www.dreamdesignerholidays.com/images/footer_background.gif');min-height:300px;text-align:center">
                
-                    <a href="pages/home">Home</a>
+                    <a href="pages/home" style="color:black">Home</a>
                     <a href="pages/about">About</a>
                     <a href="pages/sign_in">Sign In</a>
                     <a href="pages/terms">Terms of Service</a>
@@ -36,7 +38,8 @@
                     <a href="pages/site_map">Site Map</a>
                     
             </div>
-        </div>
+        
+    </div>
     </div>
 </body>
 </html>

@@ -1,3 +1,10 @@
 body {
-	background: 'http://static.tumblr.com/xsp9wak/xAOkloi15/background-top.jpg';
+	
+	.wrapper {
+		box-shadow: 10px 10px 5px #888888;
+ 	}
+	
+	.container {
+		box-shadow: 10px 10px 5px #888888;
+	}
 }
