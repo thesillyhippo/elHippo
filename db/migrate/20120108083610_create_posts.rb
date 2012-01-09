@@ -8,11 +8,4 @@ class CreatePosts < ActiveRecord::Migration
     end
   end
   
-  def self.up
-    rename_table :posts, :post
-  end
-  
-  def self.down
-    rename_table :posts, :post
-  end
 end

@@ -1,4 +1,16 @@
 ElHippo::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/sign_in"
+
+  get "pages/terms"
+
+  get "pages/contact"
+
+  get "pages/site_map"
+
+  get "pages/about"
+
   resources :posts
 
   resources :users
@@ -52,7 +64,7 @@ ElHippo::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'pages#home'
 
   # See how all your routes lay out with "rake routes"
 
