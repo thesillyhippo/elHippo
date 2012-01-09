@@ -7,4 +7,24 @@ body {
 	.container {
 		box-shadow: 10px 10px 5px #888888;
 	}
+	
+	
+}
+.box-container .row {	
+	
+	margin-left: 10px;
+	
+}
+
+.information {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.black-box {
+	text-align: center;
+}
+
+.foot-link {
+	font-family: Century Gothic, sans-serif;
 }
