@@ -5,3 +5,85 @@
  *= require_self
  *= require_tree . 
 */
+
+
+
+.container  {
+	box-shadow: 0 0px 10px #888888;
+	width: 900px;
+	height: auto;
+	margin: auto;
+	background-image:url('sketchy.png');
+}
+
+.container #header {
+	text-align:center;	
+}
+
+.container #header .wrapper {
+	background-image:url('sketchy.png');
+}
+
+.container #header .wrapper #logo-container {
+	min-height:100px;
+}
+
+.container #header .logo-header a {
+	font-size:30px;
+	margin:15px 0 0 20px;
+	float:left;
+	color:black;
+	font-family: Century Gothic, sans-serif;
+}
+
+.container #header #sign-in-link a {
+	color:black;
+}
+
+a {
+	text-decoration: none
+}
+
+a:hover {
+	background-color: transparent !important ;
+	font-weight: bold;
+}
+.container #header #sign-in-link {
+	margin: 10px 15px 0 0;
+	float:right;
+	font-size:15px;
+	color:black;
+	font-family: Century Gothic, sans-serif;
+}
+	
+.container #footer .footer-wrapper {
+	background-image:url('http://www.dreamdesignerholidays.com/images/footer_background.gif');
+	min-height:300px;
+	text-align:center;
+}
+	
+.box-container .row {		
+	margin-left: 10px;	
+}
+
+.information {
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.black-box {
+	text-align: center;
+}
+
+#footer a {
+	font-family: Century Gothic, sans-serif;
+	color: black;
+}
+
+#footer {
+	
+}
+
+
+
+

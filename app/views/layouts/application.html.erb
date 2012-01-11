@@ -1,49 +1,16 @@
-
 <html>
-<head>
-  <title><%= title %></title>
-  <%= stylesheet_link_tag    "main", "http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css"  %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-    <div class="container" style="box-shadow: 0 0px 10px #888888;">
-    <div id="header" style="text-align:center;">
-        
-        
-            <div class ="wrapper" style="background-image:url('sketchy.png');">
-               
-                    <div id="logo-container" style="min-height:100px;">
-                         <a href="pages/home">
-                        <p style="font-size:30px;margin:10px 0 0 15px;float:left;color:black;font-family: Century Gothic, sans-serif;">Elusive Hippo<p> </a>
-                         <a href="sign_in" class="sign-in-link" style="margin: 10px 15px 0 0;float:right;font-size:15px;color:black;font-family: Century Gothic, sans-serif;">sign in</a>
-                    </div>
-            
-                
-         
-                
-            
-            </div>
-        
-        
-    </div>
-
-<%= yield %>
-
-    <div id="footer">
-      
-            <div class="wrapper" style="background-image:url('http://www.dreamdesignerholidays.com/images/footer_background.gif');min-height:300px;text-align:center">
-               
-                    <a class ="foot-link" href="home" style="color:black">Home</a>
-                    <a class ="foot-link" href="about">About</a>
-                    <a class ="foot-link" href="sign_in">Sign In</a>
-                    <a class ="foot-link" href="terms">Terms of Service</a>
-                    <a class ="foot-link" href="contact">Contact</a>
-                    <a class ="foot-link" href="site_map">Site Map</a>
-                    
-            </div>
-        
-    </div>
-    </div>
-</body>
+    <head>
+      <title><%= title %></title>
+      <%= csrf_meta_tags %>
+      <%= render 'layouts/index'%>
+    </head>
+    <body>
+        <div class="container">
+            <%= render 'layouts/header'%>
+            <section class="body">
+                <%= yield %>
+            </section>
+            <%= render 'layouts/footer'%>
+        </div>
+    </body>
 </html>

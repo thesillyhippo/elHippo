@@ -1,3 +1,50 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+   
+}
+
+.box-container{
+    background-image:url('sketchy.png');
+    
+    .row {
+    	margin-left: 0px;
+    }
+}
+
+.col0 {
+    background: #F0FCD5;
+    border: solid 1px #EEE;
+    border-radius: 6px;
+    padding: 30px 26px;
+	margin: 0 120px;
+
+
+}
+
+.black-box {
+	text-align: center;
+}
+
+.body-text{
+	color: black;	
+}
+
+#cloud-title {
+    font-size: 50px;
+    font-family: Brushstroke, fantasy;
+    color: darkblue;
+}
+
+#cloud-subtitle {
+    font-size: 20px;
+    font-family: Brushstroke, fantasy;
+    color: green;
+}
+
+#sky-hippo{
+    box-shadow: 0 0px 10px #888888;
+    margin-bottom: 20px
+}
