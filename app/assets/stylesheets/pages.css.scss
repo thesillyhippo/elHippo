@@ -48,3 +48,34 @@ h1 {
     box-shadow: 0 0px 10px #888888;
     margin-bottom: 20px
 }
+
+#signInBox {
+    margin: 30px auto 30px;
+    width: 400px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: whiteSmoke;
+    background: -webkit-gradient(linear,center top,center bottom,from(white),to(whiteSmoke));
+    background: -moz-linear-gradient(top,white,whiteSmoke);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff5f5f5',GradientType=0);
+    box-shadow: inset 0 0 3px white,0 2px 2px -2px rgba(0,0,0,0.2);
+    -o-box-shadow: inset 0 0 3px white,0 2px 2px -2px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 0 3px white,0 2px 2px -2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0 0 3px white,0 2px 2px -2px rgba(0,0,0,0.2);
+    border-image: initial;
+    
+    a:hover {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    
+    #inputEmail {
+        margin: 15px 121px 3px 0;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+    }
+}

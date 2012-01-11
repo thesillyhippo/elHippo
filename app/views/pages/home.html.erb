@@ -11,29 +11,26 @@
             
             
             </div>
-    
             
-            <div id="confirm-city">
-                <div class="col0">
-                    <p>Become an Elusive Hippo. Join for free:</p>
-                         <div class="formbox clear">
-                             <div class="selector" id="uniform-id_city">
-                                <span>San Francisco</span>
-                                <select id="id_city" class="signup-location" name="city" style="opacity: 0; ">
-                                <option value="59">Akron/Canton</option>
-                                <option value="60">Albany</option>
-                                <option value="62">Allentown/Reading</option>
-                                <option value="10">Atlanta</option>
-                                </select>
-                            </div>     
-                        </div>
-                        <div class="submit-button">
-                            <input id="signup-submit-city" type="button" class="formbutton" value="Get started - it's free!">
-                        </div>
-                </div>
-                <div class="col1" style="margin-top:30px">
-                </div>
-             </div>
+            <div id="signInBox" class="clearfix">
+ 
+		<form accept-charset="UTF-8" action="/authenticate" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="yJJ4oIfDM72Brps4qNS9vPa14vNSHokS/woaRqZBk1o="></div>
+
+
+			<div class="textInput" id="inputEmail">
+				<input type="text" name="email" tabindex="1" id="signin_email" value="" placeholder="Email Address">
+			</div>
+			<div class="textInput" id="inputPassword">
+				<input type="password" name="password" id="signin_password" tabindex="2" placeholder="Password">
+				<a href="/forgot_password" class="forgotPassword" tabindex="5">Forgot password?</a>
+			</div>
+			<div class="formActions clearfix">
+				<input type="submit" id="bSignIn" class="button-glossy" value="Sign In" tabindex="4">
+				<label for="remember_me2"><div class="checker" id="uniform-remember_me2"><span><input type="checkbox" name="remember_me" id="remember_me2" value="true" tabindex="3" style="opacity: 0; "></span></div><span>Remember me next time</span></label>
+			</div>
+</form>				</div>
+            
+           
            
         </div>
     </div>
