@@ -1,5 +1,11 @@
 ElHippo::Application.routes.draw do
   
+  
+
+  get "users/new"
+
+  match '/signup', :to => 'users#new'
+
   get "home" => 'pages#home'
 
   get "sign_in" => 'pages#sign_in'

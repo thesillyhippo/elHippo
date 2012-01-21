@@ -35,7 +35,8 @@ gem 'jquery-rails'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
-  #gem 'sqlite3'
+  gem 'sqlite3'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
 
 group :test do
@@ -43,4 +44,5 @@ group :test do
   gem 'rspec-rails', '2.6.1'
   gem 'webrat', '0.7.1'
   gem 'turn', '0.8.2', :require => false
+  gem 'factory_girl_rails', '1.0'
 end
