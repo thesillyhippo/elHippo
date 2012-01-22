@@ -9,10 +9,12 @@
 #  updated_at         :datetime
 #  encrypted_password :string(255)
 #  salt               :string(255)
+#  admin              :boolean         default(FALSE)
 #
+
 require 'digest'
 class User < ActiveRecord::Base
-  has_many :posts
+  has_many :microposts, :dependent => :destroy
 
   attr_accessor :password
   attr_accessible :name, :email, :password, :password_confirmation
@@ -39,6 +41,11 @@ class User < ActiveRecord::Base
   def self.authenticate_with_salt(id, cookie_salt)
     user = find_by_id(id)
     (user && user.salt == cookie_salt) ? user : nil
+  end
+
+  def feed
+    # This is preliminary. See Chapter 12 for the full implementation.
+    Micropost.where("user_id = ?", id)
   end
 
   private

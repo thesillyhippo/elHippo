@@ -10,25 +10,45 @@
                 <%= image_tag "sky_hippo.png", :id => "sky-hippo"%>
             
             
+
             </div>
+
+            <% if signed_in? %>
+			  <table class="front" summary="For signed-in users">
+			    <tr>
+			      <td class="main">
+			        <h1 class="micropost">What's up?</h1>
+			        <%= render 'shared/micropost_form' %>
+			        <%= render 'shared/feed' %>
+			      </td>
+			      <td class="sidebar round">
+			        <%= render 'shared/user_info' %>
+			      </td>
+			    </tr>
+			  </table>
+			<% else %>
+			
             
             <div id="signInBox" class="clearfix">
  
-		<form accept-charset="UTF-8" action="/authenticate" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="yJJ4oIfDM72Brps4qNS9vPa14vNSHokS/woaRqZBk1o="></div>
+				<form accept-charset="UTF-8" action="/authenticate" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="yJJ4oIfDM72Brps4qNS9vPa14vNSHokS/woaRqZBk1o="></div>
 
 
-			<div class="textInput" id="inputEmail">
-				<input type="text" name="email" tabindex="1" id="signin_email" value="" placeholder="Email Address">
+					<div class="textInput" id="inputEmail">
+						<input type="text" name="email" tabindex="1" id="signin_email" value="" placeholder="Email Address">
+					</div>
+					<div class="textInput" id="inputPassword">
+						<input type="password" name="password" id="signin_password" tabindex="2" placeholder="Password">
+						<a href="/forgot_password" class="forgotPassword" tabindex="5">Forgot password?</a>
+					</div>
+					<div class="formActions clearfix">
+						<input type="submit" id="bSignIn" class="button-glossy" value="Sign In" tabindex="4">
+						<label for="remember_me2"><div class="checker" id="uniform-remember_me2"><span><input type="checkbox" name="remember_me" id="remember_me2" value="true" tabindex="3" style="opacity: 0; "></span></div><span>Remember me next time</span></label>
+					</div>
+				</form>
+				
 			</div>
-			<div class="textInput" id="inputPassword">
-				<input type="password" name="password" id="signin_password" tabindex="2" placeholder="Password">
-				<a href="/forgot_password" class="forgotPassword" tabindex="5">Forgot password?</a>
-			</div>
-			<div class="formActions clearfix">
-				<input type="submit" id="bSignIn" class="button-glossy" value="Sign In" tabindex="4">
-				<label for="remember_me2"><div class="checker" id="uniform-remember_me2"><span><input type="checkbox" name="remember_me" id="remember_me2" value="true" tabindex="3" style="opacity: 0; "></span></div><span>Remember me next time</span></label>
-			</div>
-</form>				</div>
+			<% end %>
             
            
            
