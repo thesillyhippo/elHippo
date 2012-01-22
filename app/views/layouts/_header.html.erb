@@ -4,9 +4,19 @@
              <p class="logo-header">
                 <%= link_to "Elusive Hippo", root_path%>
              </p>
-             <p id="sign-in-link">
-                <%= link_to "Sign In", sign_in_path%>   
+             <% if signed_in? %>
+             <p id="profile-link">
+                <%= link_to "Profile", current_user %>
              </p>
+             <p id="sign-out-link">
+                <%= link_to "Sign out", signout_path, :method => :delete%>   
+             </p>
+             <% else %>
+             <p id="sign-in-link">
+                <%= link_to "Sign in", signin_path%>   
+             </p>
+             <% end %>
+
         </div> 
     </div>
 </div>
